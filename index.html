@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Pedidos via Whatsapp</title>
+</head>
+
+<body>
+    <h1>Escolha seu Lanche e Bebida</h1>
+
+    <form action="envio.php" method="post">
+        <label for="nome">Nome: </label>
+        <input type="text" name="Nome" class="nome" required>
+
+        <label for="lanche">Lanche:</label>
+        <select id="lanche" name="Lanche" required>
+            <option value="Hambúrguer">Hambúrguer</option>
+            <option value="Hot Dog">Hot Dog</option>
+            <option value="Pizza">Pizza</option>
+            <option value="Sandwich">Sanduíche</option>
+        </select>
+
+        <legend>Escolha uma Bebida</legend>
+        <label for="bebida">Bebida:</label>
+        <select id="bebida" name="Bebida" required>
+            <option value="Refrigerante">Refrigerante</option>
+            <option value="Suco">Suco</option>
+            <option value="Água">Água</option>
+            <option value="Cerveja">Cerveja</option>
+        </select>
+
+        <input type="submit" value="Enviar" class="button">
+    </form>
+</body>
+</html>
